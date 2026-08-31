@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "mandelbrot_common.h"
 #define MAX_DIMENSAO 4000
 
 long converter_argumento(char *texto, char *nome_parametro);
@@ -31,6 +32,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    int **matriz = alocar_matriz(altura, largura);
+    if (matriz == NULL) {
+        fprintf(stderr, "Erro: falha ao alocar memoria para a matriz.\n");
+        return 1;
+    }else fprintf(stderr, "Matriz alocada com sucesso.\n");
+    liberar_matriz(matriz, altura);
     return 0;
 }
 
