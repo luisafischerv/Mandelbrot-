@@ -1,16 +1,25 @@
 Script started on 2026-08-30 13:25:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="118" LINES="14"]
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mdate[27m
-[7mwhoami[27m
-[7mpwd[27m
-[7mcat evidencias.log[27m[A[A[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ date
-whoami
-pwd
-cat evidencias.log
-[?2004lSun Aug 30 13:29:22 -03 2026
+
+[7mwhoami[27m
+
+[7mpwd[27m
+
+[7mcat evidencias.log[27m[A[A[A
+]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ date
+
+whoami
+
+pwd
+
+cat evidencias.log
+[?2004l
+Sun Aug 30 13:29:22 -03 2026
 lfvm
 /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
-[?2004lgcc -Wall -Wextra -O2 -c main.c
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
 gcc -Wall -Wextra -O2 -c mandelbrot_common.c
 gcc main.o mandelbrot_common.o -o mandelbrot -lm
 /usr/bin/x86_64-linux-gnu-ld.bfd: /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
@@ -18,7 +27,8 @@ gcc main.o mandelbrot_common.o -o mandelbrot -lm
 collect2: error: ld returned 1 exit status
 make: *** [Makefile:2: mandelbrot] Error 1
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
-[?2004lgcc -Wall -Wextra -O2 -c main.c
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
 [01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
 [01m[Kmain.c:3:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
     3 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
@@ -26,12 +36,16 @@ make: *** [Makefile:2: mandelbrot] Error 1
 gcc -Wall -Wextra -O2 -c mandelbrot_common.c
 gcc main.o mandelbrot_common.o -o mandelbrot -lm
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot
-[?2004lErro: numero incorreto de argumentos.
+[?2004l
+Erro: numero incorreto de argumentos.
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4
-[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
-[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004l
+rm -f *.o mandelbrot *.pgm times.txt
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
-[?2004lgcc -Wall -Wextra -O2 -c main.c
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
 [01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
 [01m[Kmain.c:10:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klargura[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
    10 |     long [01;35m[Klargura[m[K = strtol(argv[1], &fim, 10);
@@ -39,14 +53,19 @@ gcc main.o mandelbrot_common.o -o mandelbrot -lm
 gcc -Wall -Wextra -O2 -c mandelbrot_common.c
 gcc main.o mandelbrot_common.o -o mandelbrot -lm
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
-[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot abc 800 1000 4[27m./mandelbrot abc 800 1000 4
-[?2004lErro: largura invalida (nao e um numero)
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot abc 800 1000 4[27m./mandelbrot abc 800 1000 4
+[?2004l
+Erro: largura invalida (nao e um numero)
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800[27m./mandelbrot 800
-[?2004lErro: numero incorreto de argumentos.
+[?2004l
+Erro: numero incorreto de argumentos.
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
-[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004l
+rm -f *.o mandelbrot *.pgm times.txt
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
-[?2004lgcc -Wall -Wextra -O2 -c main.c
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
 [01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
 [01m[Kmain.c:26:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_threads[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
    26 |     long [01;35m[Knum_threads[m[K = strtol(argv[4], &fim, 10);
@@ -63,13 +82,381 @@ gcc main.o mandelbrot_common.o -o mandelbrot -lm
 gcc -Wall -Wextra -O2 -c mandelbrot_common.c
 gcc main.o mandelbrot_common.o -o mandelbrot -lm
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
-[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 xyz 1000 4[27m./mandelbrot 800 xyz 1000 4
-[?2004lErro: altura invalida (nao e um numero): xyz
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 xyz 1000 4[27m./mandelbrot 800 xyz 1000 4
+[?2004l
+Erro: altura invalida (nao e um numero): xyz
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 abc[27m./mandelbrot 800 800 1000 abc
-[?2004lErro: num_threads invalido (nao e um numero): abc
+[?2004l
+Erro: num_threads invalido (nao e um numero): abc
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
-[?2004lgcc -Wall -Wextra -O2 -c main.c
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
 gcc main.o mandelbrot_common.o -o mandelbrot -lm
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 0 800 1000 4[27m./mandelbrot 0 800 1000 4
-[?2004lErro: largura deve ser um valor entre 1 e 4000.
-[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive
+[?2004l
+Erro: largura deve ser um valor entre 1 e 4000.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 0 800 1000 4[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 5000 800 1000 4[27m./mandelbrot 5000 800 1000 4
+[?2004l
+Erro: largura deve ser um valor entre 1 e 4000.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 0 4[27m./mandelbrot 800 800 0 4
+[?2004l
+Erro: o numero maximo de interacoes deve ser maior que zero.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 -1[27m./mandelbrot 800 800 1000 -1
+[?2004l
+Erro: o numero de threads deve ser maior que zero.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot abc 800 1000 4[27m./mandelbrot abc 800 1000 4
+[?2004l
+Erro: largura invalido (nao e um numero): abc
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make./mandelbrot abc 800 1000 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make./mandelbrot 800 800 1000 4
+[?2004l
+Matriz alocada com sucesso.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4make[K./mandelbrot 800 800 1000 4make[K./mandelbrot abc 800 1000 4800[C[C[C[C[C[C[C[C[C[C[C-1[4P0 4[4@5000 800 100[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[Cmake[K./mandelbrot 800 800 1000 abc[2Pxyz 1000 4800[C[C[C[C[C[C[Cmake[K clean./mandelbrot 800abc 800 1000 4800[C[C[C[C[C[C[C[C[C[C[Cmake[K clean./mandelbrot 800 800 1000 4[K[8Pmakecat evidencias.logpwd[Kwhoami[2Pdatemake clean./processFlowmake[K./processFlow[3Pmake clean[6Pdatewhoami[3Ppwdcat evidencias.log
+[?2004l
+Script started on 2026-08-30 13:25:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="118" LINES="14"]
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mdate[27m
+
+
+[7mwhoami[27m
+
+
+[7mpwd[27m
+
+
+[7mcat evidencias.log[27m[A[A[A
+]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ date
+
+
+whoami
+
+
+pwd
+
+
+cat evidencias.log
+
+[?2004l
+Sun Aug 30 13:29:22 -03 2026
+
+lfvm
+
+/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+/usr/bin/x86_64-linux-gnu-ld.bfd: /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+
+(.text+0x1b): undefined reference to `main'
+
+collect2: error: ld returned 1 exit status
+
+make: *** [Makefile:2: mandelbrot] Error 1
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+
+[01m[Kmain.c:3:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+
+    3 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+
+      |                    [01;35m[K~~~~~~^~~~~~[m[K
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot
+
+[?2004l
+Erro: numero incorreto de argumentos.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+
+[?2004l
+rm -f *.o mandelbrot *.pgm times.txt
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+
+[01m[Kmain.c:10:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klargura[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+
+   10 |     long [01;35m[Klargura[m[K = strtol(argv[1], &fim, 10);
+
+      |          [01;35m[K^~~~~~~[m[K
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot abc 800 1000 4[27m./mandelbrot abc 800 1000 4
+
+[?2004l
+Erro: largura invalida (nao e um numero)
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800[27m./mandelbrot 800
+
+[?2004l
+Erro: numero incorreto de argumentos.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+
+[?2004l
+rm -f *.o mandelbrot *.pgm times.txt
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+
+[01m[Kmain.c:26:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_threads[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+
+   26 |     long [01;35m[Knum_threads[m[K = strtol(argv[4], &fim, 10);
+
+      |          [01;35m[K^~~~~~~~~~~[m[K
+
+[01m[Kmain.c:21:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_iteracoes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+
+   21 |     long [01;35m[Kmax_iteracoes[m[K = strtol(argv[3], &fim, 10);
+
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+
+[01m[Kmain.c:16:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kaltura[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+
+   16 |     long [01;35m[Kaltura[m[K = strtol(argv[2], &fim, 10);
+
+      |          [01;35m[K^~~~~~[m[K
+
+[01m[Kmain.c:11:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klargura[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+
+   11 |     long [01;35m[Klargura[m[K = strtol(argv[1], &fim, 10);
+
+      |          [01;35m[K^~~~~~~[m[K
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 xyz 1000 4[27m./mandelbrot 800 xyz 1000 4
+
+[?2004l
+Erro: altura invalida (nao e um numero): xyz
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 abc[27m./mandelbrot 800 800 1000 abc
+
+[?2004l
+Erro: num_threads invalido (nao e um numero): abc
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 0 800 1000 4[27m./mandelbrot 0 800 1000 4
+
+[?2004l
+Erro: largura deve ser um valor entre 1 e 4000.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 0 800 1000 4[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 5000 800 1000 4[27m./mandelbrot 5000 800 1000 4
+
+[?2004l
+Erro: largura deve ser um valor entre 1 e 4000.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 0 4[27m./mandelbrot 800 800 0 4
+
+[?2004l
+Erro: o numero maximo de interacoes deve ser maior que zero.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 -1[27m./mandelbrot 800 800 1000 -1
+
+[?2004l
+Erro: o numero de threads deve ser maior que zero.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot abc 800 1000 4[27m./mandelbrot abc 800 1000 4
+
+[?2004l
+Erro: largura invalido (nao e um numero): abc
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make./mandelbrot abc 800 1000 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4
+
+[?2004l
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make./mandelbrot 800 800 1000 4
+
+[?2004l
+Matriz alocada com sucesso.
+
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4make[K./mandelbrot 800 800 1000 4make[K./mandelbrot abc 800 1000 4800[C[C[C[C[C[C[C[C[C[C[C-1[4P0 4[4@5000 800 100[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[Cmake[K./mandelbrot 800 800 1000 abc[2Pxyz 1000 4800[C[C[C[C[C[C[Cmake[K clean./mandelbrot 800abc 800 1000 4800[C[C[C[C[C[C[C[C[C[C[Cmake[K clean./mandelbrot 800 800 1000 4[K[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ cleat[Kr
+[?2004l
+[H[2J[3J[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ clearat evidencias.log./mandelbrot 800 800 1000 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake./mandelbrot 800 800 1000 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+/usr/bin/x86_64-linux-gnu-ld.bfd: main.o: in function `main':
+main.c:(.text.startup+0x10e): undefined reference to `mandelbrot_ponto'
+/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text.startup+0x140): undefined reference to `mandelbrot_ponto'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: mandelbrot] Error 1
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004l
+rm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004l
+gcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+[?2004l
+Matriz alocada com sucesso.
+Teste c=1 2 iteracoes (esperado: 2)
+Teste c=-1 1000 iteracoes (esperado: 1000, o maximo)
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 800 800 1000 4make[K clean[Kclearat evidencias.log
+Script started on 2026-08-30 23:48:51-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="118" LINES="14"]
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 800 800 1000 4[27m./mandelbrot 800 800 1000 4
+[?2004lMatriz alocada com sucesso.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clena[K[Kan
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:45:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kmandelbrot_serial[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   45 |     [01;31m[Kmandelbrot_serial[m[K(matriz, largura, altura, max_iteracoes);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:49:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kescrever_pgm[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   49 |     [01;31m[Kescrever_pgm[m[K("mandelbrot_lfvm_serial.pgm", matriz, largura, altura);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean[K[K[K[K[K[K[K[K[K[Kmake clen[Kan
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 5 5 100 4[27m./mandelbrot 5 5 100 4
+[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mcat mandelbrot_lfvm_serial.pgm[27mcat mandelbrot_lfvm_serial.pgm
+[?2004l0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mmake clean[27m
+[7mmake[27m
+[7m./mandelbrot 5 5 100 4[27m
+[7mcat mandelbrot_lfvm_serial.pgm[27m[A[A[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+make
+./mandelbrot 5 5 100 4
+cat mandelbrot_lfvm_serial.pgm
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+gcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mmake[27m
+[7m./mandelbrot 5 5 100 4[27m
+[7mcat mandelbrot_lfvm_serial.pgm[27m[A[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+./mandelbrot 5 5 100 4
+cat mandelbrot_lfvm_serial.pgm
+[?2004lgcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc main.o mandelbrot_common.o -o mandelbrot -lm
+0 2 2 2 2 
+0 5 12 10 2 
+255 255 255 255 5 
+0 5 12 10 2 
+0 2 2 2 2 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-31 01:00:02-03:00 [COMMAND_EXIT_CODE="0"]

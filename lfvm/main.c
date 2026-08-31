@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "mandelbrot_common.h"
 #define MAX_DIMENSAO 4000
 
@@ -12,12 +13,12 @@ int main(int argc, char *argv[]) {
     }
     
     long largura = converter_argumento(argv[1], "largura");
-    if (largura <= 0 || largura > MAX_DIMENSAO) {
+    if (largura <= 1 || largura > MAX_DIMENSAO) {
         fprintf(stderr, "Erro: largura deve ser um valor entre 1 e %d.\n", MAX_DIMENSAO);
         return 1;
     }
     long altura = converter_argumento(argv[2], "altura");
-    if (altura <= 0 || altura > MAX_DIMENSAO) {
+    if (altura <= 1 || altura > MAX_DIMENSAO) {
         fprintf(stderr, "Erro: altura deve ser um valor entre 1 e %d.\n", MAX_DIMENSAO);
         return 1;
     }
@@ -36,8 +37,28 @@ int main(int argc, char *argv[]) {
     if (matriz == NULL) {
         fprintf(stderr, "Erro: falha ao alocar memoria para a matriz.\n");
         return 1;
-    }else fprintf(stderr, "Matriz alocada com sucesso.\n");
+    }
+    struct timespec inicio;
+    struct timespec fim;
+
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    mandelbrot_serial(matriz, largura, altura, max_iteracoes);
+    clock_gettime(CLOCK_MONOTONIC, &fim);
+
+    double tempo_serial = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
+    escrever_pgm("mandelbrot_lfvm_serial.pgm", matriz, largura, altura);
+
+    FILE *arquivo_tempos = fopen("times.txt", "w");
+    if (arquivo_tempos == NULL) {
+        fprintf(stderr, "Erro: nao foi possivel criar times.txt\n");
+        return 1;
+    }
+    fprintf(arquivo_tempos, "Serial: %.6f segundos\n", tempo_serial);
+    fclose(arquivo_tempos);
+
+
     liberar_matriz(matriz, altura);
+
     return 0;
 }
 
