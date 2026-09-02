@@ -1,5 +1,5 @@
-mandelbrot: main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o
-	gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o -o mandelbrot -lm -fopenmp -pthread
+mandelbrot: main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o
+	gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -o mandelbrot -lm -fopenmp -pthread
 
 main.o: main.c mandelbrot_common.h
 	gcc -Wall -Wextra -O2 -c main.c
@@ -15,6 +15,9 @@ mandelbrot_openmp.o: mandelbrot_openmp.c mandelbrot_common.h
 
 mandelbrot_pthreads1.o: mandelbrot_pthreads1.c mandelbrot_common.h
 	gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads1.c
+
+mandelbrot_pthreads2.o: mandelbrot_pthreads2.c mandelbrot_common.h
+	gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads2.c
 
 run: mandelbrot
 	./mandelbrot 800 800 1000 4

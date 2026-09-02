@@ -15,5 +15,6 @@ void escrever_pgm(const char *nome_arquivo, int **matriz, int largura, int altur
 void serial(int **matriz, int largura, int altura, int max_iteracoes);
 void openmp(int **matriz, int largura, int altura, int max_interacoes, int num_threads);
 void pthreads1(int **matriz, int largura, int altura, int max_iteracoes, int num_threads);
+void pthreads2(int **matriz, int largura, int altura, int max_iteracoes, int num_threads);
 
 #endif

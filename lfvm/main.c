@@ -66,6 +66,14 @@ int main(int argc, char *argv[]) {
     double tempo_pthreads1 = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     escrever_pgm("mandelbrot_lfvm_pthreads1.pgm", matriz, largura, altura);
 
+    //pthreads2
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    pthreads2(matriz, largura, altura, max_iteracoes, num_threads);
+    clock_gettime(CLOCK_MONOTONIC, &fim);
+
+    double tempo_pthreads2 = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
+    escrever_pgm("mandelbrot_lfvm_pthreads2.pgm", matriz, largura, altura);
+
     FILE *arquivo_tempos = fopen("times.txt", "w");
     if (arquivo_tempos == NULL) {
         fprintf(stderr, "Erro: nao foi possivel criar times.txt\n");
@@ -74,8 +82,9 @@ int main(int argc, char *argv[]) {
     fprintf(arquivo_tempos, "Serial: %.6f segundos\n", tempo_serial);
     fprintf(arquivo_tempos, "OpenMP: %.6f segundos\n", tempo_openmp);
     fprintf(arquivo_tempos, "Pthreads1: %.6f segundos\n", tempo_pthreads1);
+    fprintf(arquivo_tempos, "Pthreads2: %.6f segundos\n", tempo_pthreads2);
     fclose(arquivo_tempos);
-    
+
     liberar_matriz(matriz, altura);
 
     return 0;
