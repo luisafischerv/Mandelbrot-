@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include "mandelbrot_common.h"
+#include "mandelbrot_serial.h"
+#include "mandelbrot_openmp.h"
 #define MAX_DIMENSAO 4000
 
 long converter_argumento(char *texto, char *nome_parametro);
@@ -41,12 +43,21 @@ int main(int argc, char *argv[]) {
     struct timespec inicio;
     struct timespec fim;
 
+    //serial
     clock_gettime(CLOCK_MONOTONIC, &inicio);
-    mandelbrot_serial(matriz, largura, altura, max_iteracoes);
+    serial(matriz, largura, altura, max_iteracoes);
     clock_gettime(CLOCK_MONOTONIC, &fim);
 
     double tempo_serial = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
     escrever_pgm("mandelbrot_lfvm_serial.pgm", matriz, largura, altura);
+
+    //openmp
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
+    openmp(matriz, largura, altura, max_iteracoes, num_threads);
+    clock_gettime(CLOCK_MONOTONIC, &fim);
+
+    double tempo_openmp = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
+    escrever_pgm("mandelbrot_lfvm_openmp.pgm", matriz, largura, altura);
 
     FILE *arquivo_tempos = fopen("times.txt", "w");
     if (arquivo_tempos == NULL) {
@@ -54,6 +65,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     fprintf(arquivo_tempos, "Serial: %.6f segundos\n", tempo_serial);
+    fprintf(arquivo_tempos, "OpenMP: %.6f segundos\n", tempo_openmp);
     fclose(arquivo_tempos);
 
 
