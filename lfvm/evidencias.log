@@ -1372,4 +1372,26 @@ OpenMP: 0.205662 segundos
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ^C[?2004l[?2004h[?2004l
 [?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mdiff mandelbrot_lfvm_serial.p[27m[7mg[27m[7mm mandelbrot_lfvm_openmp.pgm | wc -l[27m[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ diff mandelbrot_lfvm_serial.pgm mandelbrot_lfvm_openmp.pgm | wc -l
 [?2004l850
-[?2004h]0;lfvm@Lusa
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make x[Kclean][K
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c
+gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o -o mandelbrot -lm -fopenmp
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mmake[27m
+[7mfor i in 1 2 3 4 5; do ./mandelbrot 800 800 1000 4; diff mandelbrot_lfvm_serial.pgm mandelbrot_lfvm_op[27m[7me[27m[7mnmp.pgm | wc -l; done[27m[A[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+for i in 1 2 3 4 5; do ./mandelbrot 800 800 1000 4; diff mandelbrot_lfvm_serial.pgm mandelbrot_lfvm_openmp.pgm | wc -l; done
+[?2004lmake: 'mandelbrot' is up to date.
+0
+0
+0
+0
+0
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make clean
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ exir[Kt
+[?2004lexit
+
+Script done on 2026-09-02 14:28:07-03:00 [COMMAND_EXIT_CODE="0"]

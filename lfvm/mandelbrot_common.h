@@ -12,6 +12,8 @@ double pixel_para_real(int coluna, int largura);
 double pixel_para_imag(int linha, int altura);
 int normalizar_intensidade(int iteracoes, int max_iteracoes);
 void escrever_pgm(const char *nome_arquivo, int **matriz, int largura, int altura);
-void mandelbrot_serial(int **matriz, int largura, int altura, int max_iteracoes);
+void serial(int **matriz, int largura, int altura, int max_iteracoes);
+void openmp(int **matriz, int largura, int altura, int max_interacoes, int num_threads);
+void pthreads1(int **matriz, int largura, int altura, int max_iteracoes, int num_threads);
 
 #endif
