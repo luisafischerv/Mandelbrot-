@@ -38,18 +38,18 @@ int mandelbrot_ponto(double c_real, double c_imag, int max_iteracoes) {
         z_real = z_real_novo;
         z_imag = z_imag_novo;
         if (z_real * z_real + z_imag * z_imag > 4.0) {
-            return iteracao;
+            return iteracao + 1;
         }
     }
     return max_iteracoes;
 }
 
 double pixel_para_real(int coluna, int largura) {
-    return REAL_MIN + ((double)coluna / (largura - 1)) * (REAL_MAX - REAL_MIN);
+    return REAL_MIN + ((double)coluna / (largura)) * (REAL_MAX - REAL_MIN);
 }
 
 double pixel_para_imag(int linha, int altura) {
-    return IMAG_MIN + ((double)linha / (altura - 1)) * (IMAG_MAX - IMAG_MIN);
+    return IMAG_MIN + ((double)linha / (altura)) * (IMAG_MAX - IMAG_MIN);
 }
 
 int normalizar_intensidade(int iteracoes, int max_iteracoes) {

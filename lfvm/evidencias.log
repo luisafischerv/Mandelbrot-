@@ -1395,3 +1395,42 @@ gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o -o mandel
 [?2004lexit
 
 Script done on 2026-09-02 14:28:07-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 22:01:33-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="19"]
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ mal[Kke clean
+[?2004lrm -f *.o mandelbrot *.pgm times.txt
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c
+gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads1.c
+gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads2.c
+gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -o mandelbrot -lm -fopenmp -pthread
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7mmandelbrot_login_serial.pgm[27m[1Pmandelbrot_login_serial.pg[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./mandelbrot 4 4 50 1[27m./mandelbrot 4 4 50 1
+[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ cat [7mc:\Users\luisa\OneDrive\Desktop\Man[27m[7md[27m[7melbrot-\lfvm\mandelbrot_lfvm_serial.pgm[27m[A]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [C[C[C[Cc:\Users\luisa\OneDrive\Desktop\Mand[1Pelbrot-\lfvm\mandelbrot_lfvm_serial.pg[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mmandelbrot_login_serial.pgm[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmandelbrot_login_serial.pgm[1P[1P[1P[1P[1P[1@l[1@f[1@v[1@m[C[1@_[C[C[1P[1@m[C[1P[C
+[?2004l5 10 10 10 
+5 15 30 25 
+255 255 255 255 
+5 15 30 25 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 6 6 30 3[27m./mandelbrot 6 6 30 3
+[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 6 6 30 3cat mandelbrot_lfvm_serial.pgm[C[1P[1P[1P[1@f[1@v[1@m[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@o[1@p[1@n[1P[1@e[1@n[1@m[1@p
+[?2004l8 8 17 17 17 17 
+8 17 25 34 255 17 
+8 25 42 255 255 42 
+255 255 255 255 255 42 
+8 25 42 255 255 42 
+8 17 25 34 255 17 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 10 6 40 4[27m./mandelbrot 10 6 40 4
+[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 10 6 40 4cat mandelbrot_lfvm_openmp.pgm[1P[1P[1P[1P[1P[1P[1@p[1@t[1@h[1@r[1@e[1@a[1@d[1@s[1@1
+[?2004l6 6 6 12 12 12 12 12 12 12 
+6 12 19 19 19 25 44 25 19 12 
+6 19 19 31 38 255 255 255 44 19 
+255 255 255 255 255 255 255 255 44 19 
+6 19 19 31 38 255 255 255 44 19 
+6 12 19 19 19 25 44 25 19 12 
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make[K[K[K[Kexir[Kt
+[?2004lexit
+
+Script done on 2026-09-02 22:07:42-03:00 [COMMAND_EXIT_CODE="0"]
