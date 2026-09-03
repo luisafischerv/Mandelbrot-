@@ -1434,3 +1434,26 @@ gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbro
 [?2004lexit
 
 Script done on 2026-09-02 22:07:42-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 22:09:39-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="19"]
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 4000 800 1000 4[27m./mandelbrot 4000 800 1000 4
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ 
+Script done on 2026-09-02 22:10:30-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 22:10:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="112" LINES="19"]
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ ./mandelbrot 4000 800 1000 4[4Pscript -a evidencias.log./mandelbrot 4000 800 1000 4
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c
+gcc -Wall -Wextra -O2 -c mandelbrot_common.c
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c
+gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads1.c
+gcc -Wall -Wextra -O2 -pthread -c mandelbrot_pthreads2.c
+gcc main.o mandelbrot_common.o mandelbrot_serial.o mandelbrot_openmp.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -o mandelbrot -lm -fopenmp -pthread
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ make./mandelbrot 4000 800 1000 4
+[?2004l[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ [7m./mandelbrot 4001 800 1000 4[27m./mandelbrot 4001 800 1000 4
+[?2004lErro: largura deve ser um valor entre 1 e 4000.
+[?2004h]0;lfvm@Lusa-Notebook: /mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[01;32mlfvm@Lusa-Notebook[00m:[01;34m/mnt/c/Users/luisa/OneDrive/Desktop/Mandelbrot-/lfvm[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 22:14:14-03:00 [COMMAND_EXIT_CODE="1"]
