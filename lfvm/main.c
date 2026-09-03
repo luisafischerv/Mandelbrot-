@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "mandelbrot_common.h"
-#include "mandelbrot_serial.h"
 #define MAX_DIMENSAO 4000
 
 long converter_argumento(char *texto, char *nome_parametro);
